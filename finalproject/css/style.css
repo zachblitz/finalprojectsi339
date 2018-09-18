@@ -8,6 +8,10 @@ li{
     display: inline-block;
     ;
 }
+iframe{
+    height: 10cm;
+    width: 30%;
+}
 body{
     background-color: aqua;
     width: 85%;
