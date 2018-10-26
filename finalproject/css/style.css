@@ -413,6 +413,17 @@ a{
     display: flex;
     padding: 15px;
 }
+
+@media screen and (max-width: 400px) {
+    .si-206 {
+        background-color: lightsalmon;
+    }
+}
+@media screen and (max-width: 400px) {
+    .si-206-contents p{
+        background-color: purple;
+    }
+}
 @media screen and (max-width: 600px) {
     .si-330 {
         background-color: lightgreen;
@@ -421,16 +432,6 @@ a{
 
 @media screen and (max-width: 600px) {
     .si-330-contents p{
-        background-color: blue;
-    }
-}
-@media screen and (max-width: 400px) {
-    .si-206 {
-        background-color: lightgreen;
-    }
-}
-@media screen and (max-width: 400px) {
-    .si-206-contents p{
         background-color: blue;
     }
 }
