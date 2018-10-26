@@ -11,10 +11,6 @@ li{
 header{
     margin: 0 auto;
 }
-iframe{
-    height: 10cm;
-    width: 100%;
-}
 body{
     background-color: black;
 }
@@ -52,7 +48,7 @@ a{
     justify-content: center;
     justify-content: space-around;
     padding-bottom: 40px;
-    background-color: rgba(255, 255, 255, .8)
+    background-color: rgba(255, 255, 255, .8);
 }
 .junior{
     width: 50%;
@@ -204,7 +200,8 @@ a{
     font-size: 1cm;
 }
 #shot-text h5{
-    background-color: black;
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
     border-style: solid;
     border-color: white;
     border-width: thin;
@@ -218,7 +215,8 @@ a{
     padding: 0.15cm;
 }
 .shot-video p{
-    background-color: black;
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
     border-style: solid;
     border-color: white;
     border-width: thin;
@@ -233,3 +231,208 @@ a{
     padding: 50px;
     height: 60%;
 }
+.projects-container{
+    display: flex;
+    flex-direction: column;
+}
+.si-106{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    background-size: cover;
+    background-position: center;
+}
+.si-106-title{
+    display: flex;
+    padding: 25px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5cm;
+}
+.si-106-title h5{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 0.3cm;
+}
+.si-106-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.si-106-contents img{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 0.15cm;
+}
+.si-106-contents p{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 10px;
+}
+.si-206{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+.si-206-title{
+    display: flex;
+    padding: 25px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5cm;
+}
+.si-206-title h5{
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 0.3cm;
+}
+.si-206-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.si-206-contents img{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 0.15cm;
+}
+.si-206-contents p{
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 10px;
+}
+.si-330{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    background-size: cover;
+    background-position: center;
+}
+.si-330-title{
+    display: flex;
+    padding: 25px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5cm;
+}
+.si-330-title h5{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 0.3cm;
+}
+.si-330-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.si-330-contents img{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 0.15cm;
+}
+.si-330-contents p{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 10px;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color:  rgba(255, 255, 255, .8);
+    background-size: cover;
+    background-position: center;
+}
+.about-resume{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.about-resume iframe{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+.about-contents{
+    display: flex;
+    width: 50%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.about-contents p{
+    display: flex;
+    padding: 15px;
+}
+@media screen and (max-width: 600px) {
+    .si-330 {
+        background-color: lightgreen;
+    }
+
+@media screen and (max-width: 600px) {
+    .si-330-contents p{
+        background-color: blue;
+    }
+@media screen and (max-width: 400px) {
+    .si-330 {
+        background-color: lightgreen;
+    }
+@media screen and (max-width: 400px) {
+    .si-206-contents p{
+        background-color: blue;
+    }
+/* [.si330]{
+    width: 100%;
+}
+[.si-330-contents p]{
+    color: red;
+} */
