@@ -13,12 +13,16 @@ header{
 }
 body{
     background-color: black;
+    padding: 0% 10%;
+    margin: auto;
+    max-width: 1200px;
+    padding-bottom: 100px;
 }
-h2{
+h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
-h5{
+h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color: black;
@@ -49,6 +53,7 @@ a{
     justify-content: space-around;
     padding-bottom: 40px;
     background-color: rgba(255, 255, 255, .8);
+    /* width: 100%; */
 }
 .junior{
     width: 50%;
@@ -87,7 +92,7 @@ a{
     padding: 0.15cm;
 
 }
-.junior h5{
+.junior h2{
     background-color: black;
     border-style: solid;
     border-color: white;
@@ -95,7 +100,7 @@ a{
     padding: 0.3cm;
     margin-left: 10px;
 }
-.senior h5{
+.senior h2{
     background-color: black;
     border-style: solid;
     border-color: white;
@@ -130,6 +135,7 @@ a{
 .bball-pic-video{
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
 }
 .bball-pic{
     display: flex;
@@ -174,7 +180,7 @@ a{
     align-items: center;
     font-size: 1cm;
 }
-#midgame h5{
+#midgame h2{
     background-color: black;
     border-style: solid;
     border-color: white;
@@ -190,6 +196,7 @@ a{
     background-color: black;
     background-size: cover;
     background-position: center;
+    /* width: 100%; */
 }
 #shot-text{
     display: flex;
@@ -199,7 +206,7 @@ a{
     align-items: center;
     font-size: 1cm;
 }
-#shot-text h5{
+#shot-text h2{
     background-color: rgba(255, 255, 255, .8);
     color: black;
     border-style: solid;
@@ -234,6 +241,7 @@ a{
 .projects-container{
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
 }
 .si-106{
     display: flex;
@@ -243,6 +251,7 @@ a{
     background-color: rgba(255, 255, 255, .8);
     background-size: cover;
     background-position: center;
+    /* width: 100%; */
 }
 .si-106-title{
     display: flex;
@@ -252,7 +261,7 @@ a{
     align-items: center;
     font-size: 1.5cm;
 }
-.si-106-title h5{
+.si-106-title h2{
     background-color: black;
     border-style: solid;
     border-color: white;
@@ -291,6 +300,7 @@ a{
     background-color: black;
     background-size: cover;
     background-position: center;
+    /* width: 100%; */
 }
 .si-206-title{
     display: flex;
@@ -300,7 +310,7 @@ a{
     align-items: center;
     font-size: 1.5cm;
 }
-.si-206-title h5{
+.si-206-title h2{
     background-color: rgba(255, 255, 255, .8);
     color: black;
     border-style: solid;
@@ -341,6 +351,7 @@ a{
     background-color: rgba(255, 255, 255, .8);
     background-size: cover;
     background-position: center;
+    /* width: 100%; */
 }
 .si-330-title{
     display: flex;
@@ -350,7 +361,7 @@ a{
     align-items: center;
     font-size: 1.5cm;
 }
-.si-330-title h5{
+.si-330-title h2{
     background-color: black;
     border-style: solid;
     border-color: white;
@@ -388,6 +399,7 @@ a{
     background-color:  rgba(255, 255, 255, .8);
     background-size: cover;
     background-position: center;
+    /* width: 100%; */
 }
 .about-resume{
     display: flex;
@@ -414,24 +426,19 @@ a{
     padding: 15px;
 }
 
-@media screen and (max-width: 400px) {
-    .si-206 {
-        background-color: lightsalmon;
-    }
-}
-@media screen and (max-width: 400px) {
-    .si-206-contents p{
-        background-color: purple;
-    }
-}
 @media screen and (max-width: 600px) {
-    .si-330 {
-        background-color: lightgreen;
+    .si-106, .si-206, .si-330 {
+        flex-direction: column;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .si-330-contents p{
-        background-color: blue;
+}
+@media screen and (max-width: 1024px) {
+  
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-resume, .about-contents{
+        width: 100%;
     }
 }
