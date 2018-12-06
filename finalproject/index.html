@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
-<body>
-    
+
+<body onload="startTime()">
+<a class = access href="#maincontent">Skip to main content</a>
+
 <nav>
     <ul>
         <li><a href = "index.html">Home</a></li>
@@ -21,28 +28,51 @@
     </ul>
 </nav> 
 
+<div class = time>
+    <div id="txt"></div>
+</div>
+
+
 <header>
     <h1 class = intro>Zachary Blitz</h1>
-    <img src = "images/me.jpg" alt = "headshot of zach blitz" title = "headshot of zach blitz">
 </header>
 
-<main>
-    <img class = frontpage src = "images/knicks.jpg" alt = "knicks logo" title = "ny knicks"/>
-    <!-- <img class = frontpage src = "images/mich.jpg" alt = "michigan logo" title = "michigan"/> -->
-    <img class = frontpage src = "images/jets.jpg" alt = "jets logo" title = "ny jets"/>
-    <img class = frontpage src = "images/islanders.jpg" alt = "islanders logo" title = "ny islanders"/>
-    <img class = frontpage src = "images/mets.jpg" alt = "mets logo" title = "ny mets"/>
+<main id = maincontent>
+    <div class = index-container>
+        <div class = index-images>
+            <a href="images/knicks.jpg" data-lightbox="me" class="mix knicks" data-title="New York Knicks"><img class = frontpage src = "images/knicks.jpg" alt = "knicks logo" title = "ny knicks"/></a>
+            <a href="images/jets.jpg" data-lightbox="me" class="mix jets" data-title="New York Jets"><img class = frontpage src = "images/jets.jpg" alt = "jets logo" title = "ny jets"/></a>
+            <a href="images/me.jpg" data-lightbox="me" class="mix me" data-title="Me"><img class = frontpage src = "images/me.jpg" alt = "headshot of zach blitz" title = "headshot of zach blitz"></a>
+            <a href="images/islanders.jpg" data-lightbox="me" class="mix islanders" data-title="New York Islanders"><img class = frontpage src = "images/islanders.jpg" alt = "islanders logo" title = "ny islanders"/></a>
+            <a href="images/mets.jpg" data-lightbox="me" class="mix mets" data-title="New York Mets"><img class = frontpage src = "images/mets.jpg" alt = "mets logo" title = "ny mets"/></a>
+        </div>
+        <br>
+        <div class = index-intro>
+            <h1 class = index-contents>Welcome to my personal website! This is me, along with my favorite sports teams (click to enlarge).</h1>
+        </div>
+    </div>
 </main>
 
+<script src="js/lightbox.js"></script>
+	<script src="js/mixitup.min.js"></script>
+
+      <script>
+            var containerEl = document.querySelector('.index-container');
+            var mixer = mixitup(containerEl);
+      </script>
 
 <footer>
+    <div class = index-footer>
         <br>
-        <a href = "https://www.linkedin.com/in/zachary-blitz-279254113/">LinkedIn Profile <i class="fab fa-linkedin-in"></i></a>
+        <a href = "https://www.linkedin.com/in/zachary-blitz-279254113/">LinkedIn <i class="fab fa-linkedin-in"></i></a>
         <br>
         <a href = "mailto:zblitz@umich.edu">Email Me</a>
         <br>
-        <br>
-        &copy; 2018 by Zachary Blitz<br>
+        </div>
+    <br>
+    <br>    
+    &copy; 2018 by Zachary Blitz<br>
+    </div>
 </footer>
 
 

@@ -4,12 +4,17 @@ li{
     border-color: white;
     border-width: thin;
     padding: 0.1cm;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Alice', serif;
+    line-height: 1.5;
     display: inline-block;
     ;
 }
+nav{
+    padding-top: 10px;
+}
 header{
     margin: 0 auto;
+    padding: 10px;
 }
 body{
     background-color: black;
@@ -19,27 +24,36 @@ body{
     padding-bottom: 100px;
 }
 h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Alice', serif;
+    line-height: 1.5;
     color: white;
 }
 h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Alice', serif;
     color: white;
     background-color: black;
     padding: 0.4cm;
 }
 p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Alice', serif;
+    line-height: 1.5;
     background-color: black;
     padding: 0.1cm;
     color: white;
 }
 footer{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Alice', serif;
+    line-height: 1.5;
     color: white;
 }
 a{
     text-decoration: none;
+    color: white;
+}
+.access{
+    color: black;
+}
+.access:hover{
     color: white;
 }
 .frontpage{
@@ -109,7 +123,7 @@ a{
     margin-left: 20px;
 }
 .stats{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Alice', serif;
     font-size: 120%;
     border: .1cm;
     border-left: .5cm;
@@ -128,9 +142,11 @@ a{
     border-color: white;
     border-style: solid;
     font-style: italic;
+    line-height: 1.5;
     text-align: center;
-    font-family: 'Alice';
+    font-family: 'Alice', serif;
     font-size: 40px;
+    padding: 5px;
 }
 .bball-pic-video{
     display: flex;
@@ -142,6 +158,7 @@ a{
     flex-direction: row;
     margin: 0 auto;
     height: 750px;
+    align-items: center;
     text-align: center;
     background-image: url("../images/bballcourt.jpg");
     background-size: cover;
@@ -153,7 +170,7 @@ a{
     margin: 4% auto 2%;
     justify-items: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 25px;
     height: 60%;
     padding-top: 150px;
@@ -164,6 +181,7 @@ a{
     border-color: white;
     border-width: thin;
     padding: 0.15cm;
+    margin-left: 100px;
 }
 .action-shot p{
     background-color: black;
@@ -179,6 +197,7 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 1cm;
+    line-height: 1.5;
 }
 #midgame h2{
     background-color: black;
@@ -227,6 +246,8 @@ a{
     border-style: solid;
     border-color: white;
     border-width: thin;
+    padding: 5px;
+    text-align: left;
 }
 .shot-video{
     flex-direction: column;
@@ -275,7 +296,7 @@ a{
     margin: auto;
     justify-items: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 50px;
 }
 .si-106-contents img{
@@ -325,7 +346,7 @@ a{
     margin: auto;
     justify-items: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 50px;
 }
 .si-206-contents img{
@@ -375,7 +396,7 @@ a{
     margin: auto;
     justify-items: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 50px;
 }
 .si-330-contents img{
@@ -424,6 +445,61 @@ a{
 .about-contents p{
     display: flex;
     padding: 15px;
+    line-height: 1.2;
+}
+
+.index-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.index-images{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    padding-right: 100px;
+}
+
+.index-intro{
+    display: flex;
+    align-content: center;
+    color: black;
+    padding: 10px;
+    justify-content: center;
+    border-style: solid;
+    background-color: black;
+    border-color: white;
+    border-width: thin;
+    background-color: rgba(255, 255, 255, .8);
+    
+}
+
+.index-intro h1{
+    color: black;
+}
+
+.index-footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.time{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#txt{
+    color: white;
+    font-family: 'Alice', serif;
+}
+
+#jtt{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -441,4 +517,11 @@ a{
     .about-resume, .about-contents{
         width: 100%;
     }
+}
+
+@media screen and (max-width: 1000px) {
+    .basketball {
+        flex-direction: column;
+    }
+
 }
