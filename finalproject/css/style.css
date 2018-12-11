@@ -51,7 +51,7 @@ a{
     color: white;
 }
 .access{
-    color: black;
+    color: white;
 }
 .access:hover{
     color: white;
@@ -497,10 +497,10 @@ a{
     font-family: 'Alice', serif;
 }
 
-#jtt{
+/* #jtt{
     display: flex;
     justify-content: center;
-}
+} */
 
 @media screen and (max-width: 600px) {
     .si-106, .si-206, .si-330 {
